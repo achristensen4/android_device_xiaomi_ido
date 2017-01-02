@@ -1,20 +1,20 @@
 # Art
 dalvik.vm.dex2oat-flags=--no-watch-dog
-ro.sys.fw.dex2oat_thread_count=4
+ro.sys.fw.dex2oat_thread_count=1
 
 # Audio
 ro.qc.sdk.audio.fluencetype=fluence
 persist.audio.fluence.voicecall=true
 persist.audio.fluence.voicerec=false
 persist.audio.fluence.speaker=true
-av.streaming.offload.enable=true
+av.streaming.offload.enable=false
 audio.deep_buffer.media=true
 audio.offload.buffer.size.kb=64
-audio.offload.gapless.enabled=true
-audio.offload.min.duration.secs=30
+audio.offload.gapless.enabled=false
+audio.offload.min.duration.secs=10
 audio.offload.pcm.16bit.enable=false
-audio.offload.pcm.24bit.enable=true
-audio.offload.video=true
+audio.offload.pcm.24bit.enable=false
+audio.offload.video=false
 use.voice.path.for.pcm.voip=true
 
 # Bluetooth
@@ -30,8 +30,8 @@ persist.camera.cpp.duplication=false
 persist.sys.chgdisabled=0
 
 # Display
-debug.sf.hw=0
-debug.egl.hw=0
+debug.sf.hw=1
+debug.egl.hw=1
 persist.hwc.mdpcomp.enable=true
 debug.mdpcomp.logs=0
 debug.composition.type=c2d
